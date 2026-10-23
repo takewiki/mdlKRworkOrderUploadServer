@@ -32,12 +32,12 @@ workOrderUploadServer <- function(input,output,session,dms_token) {
 
     }else{
 
-      data <- readxl::read_excel(filename,col_types = c("text", "text", "text", "text", "text","date",
-                                                        "date", "date","text", "text", "text", "text",
-                                                        "text", "text", "text", "text", "text", "text",
-                                                        "text", "text", "text", "text", "text", "text",
-                                                        "text", "text", "text","numeric","text", "text",
-                                                        "text", "text", "text", "text","numeric", "numeric","text","date"))
+      data <- readxl::read_excel(filename,col_types = c("text", "text", "text",
+                                                        "text", "text", "date", "date", "date",
+                                                        "text", "text", "numeric", "text",
+                                                        "text", "text", "text", "text", "text",
+                                                        "text", "text", "text", "text", "text",
+                                                        "text"))
 
 
       data = as.data.frame(data)
